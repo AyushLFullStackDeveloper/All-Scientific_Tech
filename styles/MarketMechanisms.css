@@ -1,0 +1,160 @@
+/* / Container Styles / */
+.governance-wrapper {
+  text-align: center;
+  background-color: #f8f9fa;
+  padding: 40px 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/* / Banner Styling / */
+.governance-banner {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.governance-banner img {
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+/* / Cards Section / */
+.governance-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px 10px;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* / Individual Card Styling / */
+.governance-card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 180px;
+  max-width: 100%;
+  flex: 1 1 160px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.governance-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* / Card Images / */
+.governance-card img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+/* / Card Text / */
+.governance-card p {
+  font-size: clamp(12px, 3vw, 14px);
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+  word-wrap: break-word;
+  width: 100%;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .governance-wrapper {
+    padding: 30px 0;
+  }
+  
+  .governance-cards {
+    gap: 15px;
+  }
+  
+  .governance-card {
+    width: 160px;
+  }
+}
+
+@media (max-width: 768px) {
+  .governance-wrapper {
+    padding: 25px 0;
+  }
+  
+  .governance-banner img {
+    display: none;
+  }
+  
+  .governance-cards {
+    gap: 15px;
+    padding: 15px 10px;
+  }
+  
+  .governance-card {
+    width: 150px;
+    padding: 15px;
+  }
+  
+  .governance-card img {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media (max-width: 576px) {
+  .governance-wrapper {
+    padding: 20px 0;
+  }
+  
+  .governance-banner img {
+    display: none;
+  }
+  
+  .governance-cards {
+    gap: 10px;
+  }
+  
+  .governance-card {
+    width: calc(50% - 15px);
+    min-width: 130px;
+    padding: 15px 10px;
+  }
+  
+  .governance-card img {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 320px) {
+  .governance-banner img {
+    display: none;
+  }
+  
+  .governance-cards {
+    gap: 8px;
+  }
+  
+  .governance-card {
+    width: calc(50% - 10px);
+    min-width: 120px;
+    padding: 12px 8px;
+  }
+  
+  .governance-card img {
+    width: 50px;
+    height: 50px;
+  }
+}

@@ -1,0 +1,129 @@
+.suppliers-container {
+    text-align: center;
+    padding: 40px;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+  
+  .suppliers-header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 15px 0;
+  }
+  
+  .suppliers-logo {
+    width: 100px;
+    height: auto;
+    margin-right: 15px;
+  }
+  
+  .suppliers-tagline {
+    font-size: 18px;
+    color: #c80024;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .suppliers-title {
+    font-size: 34px;
+    font-weight: bold;
+    color: #c80024;
+    margin-top: 25px;
+    text-transform: uppercase;
+  }
+  
+  .suppliers-subtitle {
+    font-size: 18px;
+    color: #444;
+    margin-bottom: 35px;
+  }
+  
+  .suppliers-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .suppliers-mobile-images {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .mobile-image {
+    width: 550px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .mobile-image:hover {
+    transform: scale(1.05);
+  }
+  
+  .suppliers-connection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-top: 40px;
+  }
+  
+  .suppliers-text {
+    font-size: 16px;
+    color: #c80024;
+    font-weight: bold;
+    margin-bottom: 12px;
+  }
+  
+  .dotted-line {
+    width: 120px;
+    height: 2px;
+    border-top: 2px dashed #c80024;
+    margin: 12px 0;
+  }
+
+  .supply-text {
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+    margin-top: 12px;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 992px) {
+    .suppliers-content {
+      flex-direction: column;
+    }
+  
+    .suppliers-mobile-images {
+      flex-direction: column;
+    }
+  
+    .mobile-image {
+      width: 350px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .suppliers-title {
+      font-size: 28px;
+    }
+  
+    .suppliers-subtitle {
+      font-size: 16px;
+    }
+  
+    .mobile-image {
+      width: 320px;
+    }
+  
+    .supply-house {
+      width: 120px;
+      height: 120px;
+    }
+  }
+  

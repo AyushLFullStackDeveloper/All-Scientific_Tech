@@ -1,0 +1,107 @@
+/* Container */
+.advisors-container {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* Title Styling */
+.ethos-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 20px;
+    letter-spacing: 1.2px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.ethos-title::after {
+    content: "";
+    display: block;
+    width: 50%;
+    height: 4px;
+    background: #ff6600;
+    margin: 8px auto 0;
+    border-radius: 2px;
+}
+
+
+/* Grid Layout */
+.advisors-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    flex-wrap: wrap;
+    /* Ensures responsiveness */
+}
+
+/* Individual Card */
+.advisor-card {
+    text-align: center;
+    flex: 1 1 250px;
+    /* Ensures proper scaling */
+    max-width: 250px;
+}
+
+/* Image Styling */
+.advisor-image {
+    width: 100%;
+    max-width: 180px;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Name */
+.advisor-name {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .advisors-grid {
+        gap: 30px;
+        /* Reduce gap for smaller screens */
+    }
+
+    .advisor-card {
+        max-width: 200px;
+    }
+
+    .advisor-image {
+        max-width: 150px;
+        /* Reduce image size */
+    }
+
+    .advisor-name {
+        font-size: 14px;
+        /* Slightly smaller font */
+    }
+}
+
+@media (max-width: 480px) {
+    .advisors-title {
+        font-size: 28px;
+        /* Adjust title for smaller screens */
+    }
+
+    .advisors-grid {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .advisor-card {
+        max-width: 180px;
+    }
+
+    .advisor-image {
+        max-width: 140px;
+    }
+
+    .advisor-name {
+        font-size: 14px;
+    }
+}

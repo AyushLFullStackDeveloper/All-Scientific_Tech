@@ -1,0 +1,317 @@
+/* Base styles */
+:root {
+  --primary-blue: #0b2b5c;
+  --accent-blue: #1e85c1;
+  --accent-orange: #ff6b00;
+  --text-dark: #141a2c;
+  --text-light: #ffffff;
+  --border-color: #e0e0e0;
+  --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  --transition: all 0.3s ease;
+}
+
+/* Agreement Section */
+.agreements-section {
+  padding: 40px 20px;
+  background-color: #f7f7f7;
+  padding-top: 15vh;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.section-title h2 {
+  color: var(--primary-blue);
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.section-title p {
+  color: var(--text-dark);
+  font-size: 16px;
+}
+
+.agreement-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1024px) {
+  .agreement-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Individual Card Styling */
+.agreement-card-container {
+  width: 100%;
+  max-width: 360px;
+  transition: var(--transition);
+}
+
+.agreement-card {
+  padding: 30px;
+  background-color: white;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: var(--box-shadow);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: var(--transition);
+}
+
+.card-logo {
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.card-logo img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--primary-blue);
+  margin-bottom: 20px;
+}
+
+.learn-btn {
+  padding: 8px 20px;
+  border: 1px solid var(--primary-blue);
+  background-color: transparent;
+  color: var(--primary-blue);
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.learn-btn:hover {
+  background-color: var(--primary-blue);
+  color: white;
+}
+
+/* Detailed Agreement Content Styling */
+.detailed-agreement-content {
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: var(--box-shadow);
+  overflow: hidden;
+  /* Contains all child elements */
+}
+
+.content-wrapper {
+  padding: 30px 40px;
+}
+
+.detailed-agreement-content h2 {
+  color: var(--primary-blue);
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.detailed-agreement-content h3 {
+  color: var(--accent-blue);
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+
+.description-text {
+  margin-bottom: 25px;
+}
+
+.section-container {
+  margin-bottom: 25px;
+}
+
+.detailed-agreement-content h4 {
+  color: var(--primary-blue);
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.detailed-agreement-content p {
+  color: var(--text-dark);
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.agreement-features {
+  list-style-type: none;
+  padding-left: 20px;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+.agreement-features li {
+  padding: 8px 0;
+  position: relative;
+  padding-left: 25px;
+  color: var(--text-dark);
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.agreement-features li:before {
+  content: "•";
+  color: var(--accent-orange);
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* Add these styles to your Agreement.css file */
+
+/* Sub-features styling for nested lists */
+.sub-features {
+  list-style-type: none;
+  padding-left: 15px;
+  margin-top: 8px;
+}
+
+.sub-features li {
+  padding: 5px 0;
+  position: relative;
+  padding-left: 20px;
+  color: var(--text-dark);
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.sub-features li:before {
+  content: "○";
+  color: var(--accent-blue);
+  position: absolute;
+  left: 0;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* Button container for the back button */
+.button-container {
+  text-align: center;
+  padding: 20px 40px 30px;
+  background-color: white;
+}
+
+.back-btn {
+  padding: 10px 24px;
+  background-color: var(--primary-blue);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.back-btn:hover {
+  background-color: var(--accent-blue);
+}
+
+/* Strong text emphasis in lists */
+.agreement-features li strong {
+  color: var(--primary-blue);
+  font-weight: 600;
+}
+/* Hero Section */
+.hero-section-agreement {
+  height: 300px;
+  width: 50%; /* Set width to 50% */
+  margin: 0 auto; /* Center the hero section */
+  background-size: cover !important;
+  background-position: center;
+  background-repeat: no-repeat !important;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(11, 43, 92, 0.152), rgba(11, 43, 92, 0.027));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.hero-overlay h1 {
+  color: white;
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  padding-top: 0px;
+  width: 100%;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    height: 200px;
+    width: 80%; /* Wider on mobile for better visibility */
+  }
+  
+  .hero-overlay h1 {
+    font-size: 24px;
+  }
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Improved responsive adjustments */
+@media (max-width: 768px) {
+  .content-wrapper {
+    padding: 20px;
+  }
+
+  .button-container {
+    padding: 20px;
+  }
+
+  .detailed-agreement-content h2 {
+    font-size: 22px;
+  }
+
+  .detailed-agreement-content h3 {
+    font-size: 18px;
+  }
+
+  .detailed-agreement-content h4 {
+    font-size: 16px;
+  }
+}

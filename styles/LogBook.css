@@ -1,0 +1,130 @@
+/* ====== Global Styles ====== */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f3f4f6;
+  color: #333;
+}
+
+/* ====== Header Section ====== */
+.mhyt-header-2038 {
+  background: linear-gradient(to right, #34629f, #0c4b899f);
+  padding: 40px;
+  text-align: center;
+  color: white;
+  border-radius: 0 0 15px 15px;
+}
+
+.vrpl-logo-1092 {
+  width: 160px;
+  margin-bottom: 15px;
+}
+
+.xwqp-intro-6784 {
+  font-size: 14px;
+  max-width: 800px;
+  margin: auto;
+  line-height: 1.6;
+}
+
+.jytx-title-4823 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* ====== Main Container ====== */
+.kzyl-container-8391 {
+  width: 90%;
+  max-width: 1200px;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* ====== Section Styling ====== */
+.ghbd-section-6731 {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.ghbd-section-6731:hover {
+  transform: translateY(-5px);
+}
+
+/* ====== Section Titles ====== */
+.ytrq-title-5823 {
+  color: #004aad;
+  font-size: 22px;
+  border-bottom: 3px solid #004aad;
+  padding-bottom: 8px;
+  margin-bottom: 20px;
+}
+
+/* ====== List Styles ====== */
+.qsdn-ul-1743 {
+  padding: 0;
+}
+
+.lxpf-li-2957 {
+  list-style: none;
+  background: #f0f5ff;
+  margin: 8px 0;
+  padding: 12px;
+  border-radius: 5px;
+  font-size: 16px;
+  position: relative;
+  transition: background 0.3s ease-in-out;
+}
+
+.lxpf-li-2957:hover {
+  background: #e0ebff;
+}
+
+.lxpf-li-2957::before {
+  content: "✔";
+  color: #004aad;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+/* ====== Footer ====== */
+.zvxp-footer-6742 {
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px;
+  background: #2c63ad;
+  color: white;
+  border-radius: 10px;
+  font-size: 16px;
+}
+
+.zvxp-footer-6742 a {
+  color: white;
+  text-decoration: underline;
+}
+
+.zvxp-footer-6742 a:hover {
+  color: #cce0ff;
+}
+
+/* ====== Responsive Design ====== */
+@media (max-width: 768px) {
+  .kzyl-container-8391 {
+    width: 95%;
+  }
+  .jytx-title-4823 {
+    font-size: 24px;
+  }
+  .ytrq-title-5823 {
+    font-size: 20px;
+  }
+  .lxpf-li-2957 {
+    font-size: 14px;
+  }
+}

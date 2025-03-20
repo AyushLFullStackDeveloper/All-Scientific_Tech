@@ -1,0 +1,99 @@
+/* Global Styles */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #eef2f7, #d9e2ec);
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Main Container */
+.mno-container-999 {
+  width: 90%;
+  max-width: 1000px;
+  margin: 40px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Section */
+.mno-header-999 {
+  text-align: center;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #003b80;
+}
+
+.mno-logo-999 {
+  width: 120px;
+  margin-bottom: 10px;
+  border-radius: 50%;
+}
+
+.mno-title-999 {
+  color: #003b80;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.mno-subtitle-999 {
+  font-size: 15px;
+  font-weight: bold;
+  color: #0056b3;
+}
+
+/* Section Titles */
+.mno-heading-999, .mno-heading-888, .mno-heading-777, .mno-heading-666, .mno-heading-555 {
+  color: #003b80;
+  font-size: 18px;
+  margin-top: 25px;
+  padding-bottom: 6px;
+  border-bottom: 2px solid #0056b3;
+}
+
+/* Lists - Professional Look */
+.mno-list-999, .mno-list-888, .mno-list-777 {
+  padding: 0;
+}
+
+.mno-item-999, .mno-item-888, .mno-item-777, .mno-item-666, .mno-item-555, .mno-item-444, .mno-item-333, .mno-item-222 {
+  list-style: none;
+  padding: 8px 12px;
+  background: #f7faff;
+  margin: 6px 0;
+  border-radius: 5px;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.mno-item-999::before, .mno-item-888::before, .mno-item-777::before, .mno-item-666::before, .mno-item-555::before, .mno-item-444::before, .mno-item-333::before, .mno-item-222::before {
+  content: "✔";
+  color: #0056b3;
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+/* Footer */
+.mno-footer-999 {
+  text-align: center;
+  margin-top: 25px;
+  padding-top: 12px;
+  font-weight: bold;
+  font-size: 15px;
+  color: #0056b3;
+  border-top: 2px solid #0056b3;
+}
+
+.mno-link-999 {
+  color: #0056b3;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.mno-link-999:hover {
+  color: #003b80;
+  text-decoration: underline;
+}

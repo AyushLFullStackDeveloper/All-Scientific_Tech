@@ -1,0 +1,88 @@
+/* UpdatedEquipment.css */
+
+.rty-container-741 {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 15px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.rty-header-741 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.rty-logo-741 img {
+  width: auto;
+  height: 40px;
+}
+
+.rty-tagline-741 {
+  font-size: 14px;
+  color: #6c757d;
+  margin-top: 5px;
+}
+
+.rty-title-741 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 10px;
+}
+
+.rty-content-wrapper-741 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.rty-section-741, .rty-section-852, .rty-section-963, .rty-section-357 {
+  background: #f9f9f9;
+  padding: 15px;
+  width: 48%;
+  min-width: 250px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  text-align: left;
+}
+
+.rty-heading-741, .rty-heading-852, .rty-heading-963, .rty-heading-357 {
+  font-size: 20px;
+  color: #007bff;
+  margin-bottom: 8px;
+}
+
+.rty-paragraph-741, .rty-paragraph-852, .rty-paragraph-963, .rty-paragraph-357 {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.4;
+}
+
+.rty-center-741 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.rty-center-741 img {
+  width: 100%;
+  max-width: 320px;
+  border-radius: 50%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .rty-content-wrapper-741 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .rty-section-741, .rty-section-852, .rty-section-963, .rty-section-357 {
+    width: 100%;
+  }
+}

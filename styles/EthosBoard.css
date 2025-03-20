@@ -1,0 +1,114 @@
+/* Container Styling */
+.ethos-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    background: #ffffff;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Title Styling */
+.ethos-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 30px;
+}
+
+/* Board Members Section */
+.board-members {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+/* Individual Board Member */
+.board-member {
+    text-align: center;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 250px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.board-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Member Image */
+.member-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+/* Member Name */
+.member-name {
+    font-size: 18px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+/* Social Icons Container */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+/* Social Media Links - Square Shape */
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border: 2px solid #2f5bb7;
+    /* Default border */
+    font-size: 18px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 3px;
+}
+
+/* Facebook Icon */
+.social-link.facebook {
+    border-color: #1877F2;
+    /* Facebook Blue */
+    color: #1877F2;
+}
+
+/* LinkedIn Icon */
+.social-link.linkedin {
+    border-color: #0A66C2;
+    /* LinkedIn Blue */
+    color: #0A66C2;
+}
+
+/* Hover Effects */
+.social-link:hover {
+    background:blue;
+    border-color: blue;
+    color: #ffffff;
+    
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .board-members {
+        flex-direction: column;
+        align-items: center;
+    }
+}

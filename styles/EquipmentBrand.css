@@ -1,0 +1,166 @@
+/* Page structure */
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.content-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px 20px;
+  width: 100%;
+}
+
+/* Section containers */
+.section-container {
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+/* Hero sections */
+.section-hero {
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 60px;
+}
+
+/* Fix separate background images for each hero section */
+.equipment-hero {
+  padding-top: 60px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+  width:100%;
+}
+
+.brands-hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  width: 100%;
+}
+
+.section-hero .overlay {
+  text-align: center;
+  color: white;
+  padding: 0 20px;
+  width: 100%;
+}
+
+.section-hero title {
+  font-size: 5rem; /* Adjust if needed */
+  font-weight: 700;
+  color: var(--text-light);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin: 0; /* Remove unexpected spacing */
+  padding: 0.5rem 1rem; /* Add controlled padding */
+  padding-top: 5rem;
+  width: 100%;
+  max-width: 800px;
+ } /* Ensure it doesn’t stretc
+  
+/* Common grid styling for both sections */
+.grid-container {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+/* Equipment categories grid */
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.item {
+  background-color: #f5f8fa;
+  border-radius: 6px;
+  border-left: 4px solid #3498db;
+  transition: all 0.2s ease;
+}
+
+.item:hover {
+  background-color: #e5eff7;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.item-content {
+  display: flex;
+  align-items: center;
+  padding: 12px 15px;
+}
+
+.item-icon {
+  margin-right: 12px;
+  font-size: 1.2rem;
+  color: #3498db;
+}
+
+.item-name {
+  color: #2c3e50;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+/* Brands grid */
+.brands-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+/* Responsive design */
+@media (max-width: 900px) {
+  .category-grid, 
+  .brands-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+  
+  .section-hero h1 {
+    font-size: 2rem;
+  }
+  .equipment-hero {
+    height: 400px;
+    padding-top: 80px;
+  }
+}
+
+@media (max-width: 600px) {
+  .section-hero {
+    height: 160px;
+  }
+  .equipment-hero {
+    height: 250px;
+    padding-top: 80px;
+  }
+
+  .section-hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .section-hero p {
+    font-size: 1rem;
+  }
+
+  .content-container {
+    padding: 20px 15px;
+  }
+  
+  .category-grid,
+  .brands-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .grid-container {
+    padding: 15px;
+  }
+}

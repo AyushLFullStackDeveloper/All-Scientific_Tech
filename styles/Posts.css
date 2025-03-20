@@ -1,0 +1,242 @@
+/* Container and Title */
+.posts-container {
+  padding: 1.5rem;
+  background-color: #ffffff;
+  max-width: 100VW;
+  margin: 0 auto;
+}
+
+.posts-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 20px;
+  letter-spacing: 1.2px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.posts-title::after {
+  content: "";
+  display: block;
+  width: 10%;
+  height: 4px;
+  background: #4ea6ff !important;
+  margin: 8px auto 0;
+  border-radius: 2px;
+}
+
+/* Posts Grid Layout */
+.posts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Post Card Styling */
+.post-card {
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 1px solid #e2e8f0;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.post-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+}
+
+/* Post Image */
+.post-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.post-card:hover .post-image {
+  transform: scale(1.02);
+}
+
+/* Post Content */
+.post-content {
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+/* Author Section */
+.author-info {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.author-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #3b82f6, #60a5fa);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: 600;
+  font-size: 0.875rem;
+  box-shadow: 0 2px 4px rgba(59, 130, 246, 0.2);
+}
+
+.author-name {
+  font-weight: 600;
+  color: #2d3748;
+  margin-bottom: 0.25rem;
+}
+
+.post-meta {
+  color: #718096;
+  font-size: 0.75rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+/* Post Title */
+.post-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #2d3748;
+  margin: 0.75rem 0;
+  line-height: 1.4;
+}
+
+/* Post Description */
+.post-description {
+  color: #718096;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  flex-grow: 1;
+}
+
+/* Post Footer */
+.post-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  border-top: 1px solid #e2e8f0;
+  margin-top: auto;
+}
+
+/* Stats Section */
+.post-stats {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.stat {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  color: #718096;
+  flex-shrink: 0;
+}
+
+.stat svg {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+.stat p {
+  margin: 0;
+  line-height: 1;
+  font-size: 0.875rem;
+}
+
+/* Like Button */
+.like-button {
+  background: none;
+  border: none;
+  padding: 0.4rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: #718096;
+  transition: all 0.2s ease;
+  border-radius: 20px;
+  line-height: 1;
+}
+
+.like-button:hover {
+  color: #e53e3e;
+  background-color: #fff5f5;
+}
+
+.like-button.active {
+  color: #e53e3e;
+}
+
+.like-button svg {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+.like-button p {
+  margin: 0;
+  line-height: 1;
+  font-size: 0.875rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .posts-container {
+    padding: 1rem;
+  }
+
+  .posts-title {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+  }
+
+  .posts-grid {
+    gap: 1rem;
+  }
+
+  .post-image {
+    height: 180px;
+  }
+
+  .post-content {
+    padding: 1rem;
+  }
+
+  .post-title {
+    font-size: 1.15rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .posts-grid {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .posts-title {
+    font-size: 1.5rem;
+  }
+
+  .post-stats {
+    gap: 0.75rem;
+  }
+}

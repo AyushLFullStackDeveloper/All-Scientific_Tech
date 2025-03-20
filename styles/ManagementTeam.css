@@ -1,0 +1,187 @@
+/* / Container Styling / */
+.team-container {
+    text-align: center;
+    padding: 60px 20px;
+    background: #f4f4f4;
+}
+
+/* / Title Styling - Modern & Stylish / */
+.team-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 30px;;
+}
+
+/* / Underline Effect with Orange Gradient / */
+.team-title::after {
+    content: "";
+    width: 100px;
+    height: 4px;
+    background: linear-gradient(90deg, #2f00ff, #0400ff);
+    display: block;
+    margin: 8px auto 0;
+    border-radius: 2px;
+}
+
+/* / Grid Layout (2 Cards Per Row) / */
+.members-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+/* / Team Member Card / */
+.member-card {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 30px;
+    width: 100%;
+    max-width: 550px;
+    min-height: 300px;
+    height: auto;
+    margin: auto;
+}
+
+/* / Image Styling / */
+.member-image {
+    width: 180px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 12px;
+    flex-shrink: 0;
+    display: block;
+}
+
+/* / Team Info / */
+.member-info {
+    text-align: left;
+    flex-grow: 1;
+    margin-left: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.member-name {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.member-role {
+    color: #2f5bb7;
+    font-weight: 600;
+    margin: 8px 0;
+    font-size: 18px;
+}
+
+.member-email,
+.member-phone {
+    font-size: 16px;
+    color: #333;
+    margin: 4px 0;
+}
+
+/* Contact links styling */
+.contact-link {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+.contact-link:hover {
+    color: #2f5bb7;
+}
+
+/* / Social Icons / */
+.member-icons {
+    display: flex;
+    gap: 12px;
+    margin-top: 12px;
+}
+
+.member-social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+/* / Facebook / */
+.member-social-link.facebook {
+    color: #1877F2;
+}
+
+.member-social-link.facebook:hover {
+    background: #1877F2;
+    color: white;
+}
+
+/* / LinkedIn / */
+.member-social-link.linkedin {
+    color: #0A66C2;
+}
+
+.member-social-link.linkedin:hover {
+    background: #0A66C2;
+    color: white;
+}
+
+/* / Responsive Design / */
+@media (max-width: 1024px) {
+    .members-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .member-card {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .member-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .member-image {
+        width: 200px;
+        height: 200px;
+        margin-bottom: 20px;
+    }
+
+    .member-info {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .member-name {
+        font-size: 26px;
+    }
+
+    .member-role {
+        font-size: 20px;
+    }
+
+    .member-email,
+    .member-phone {
+        font-size: 18px;
+    }
+    
+    .member-icons {
+        justify-content: center;
+    }
+}

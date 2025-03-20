@@ -1,0 +1,221 @@
+/* BioMed Component Styles */
+
+.biomed-page {
+    padding-top: 80px;
+    width: 100%;
+  }
+  
+  /* Hero Section Styles */
+  .hero-section-bio {
+    /* background-image: url('/assets/images/biomed-hero.avif'); */
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+  }
+  
+  .hero-section-bio::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 30, 60, 0.257);
+  }
+  
+  .hero-content-bio {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+  }
+  
+  .hero-content-bio h1 {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 1.3;
+    margin: 0;
+    padding: 0 20px;
+  }
+  
+  /* Service Categories Styles */
+  .service-categories-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+  
+  .service-categories {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .service-category {
+    text-align: center;
+    width: 200px;
+  }
+  
+  .category-image {
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+  }
+  
+  .category-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .service-category:hover .category-image img {
+    transform: scale(1.05);
+  }
+  
+  .service-category h3 {
+    margin: 0;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  /* Repair Depot Section Styles */
+  .repair-depot-section {
+    /* background-image: url('/assets/images/biomed-herobg.avif'); */
+    background-size: cover;
+    background-position: center;
+    padding: 60px 20px;
+    position: relative;
+    text-align: center;
+  }
+  
+  .repair-depot-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 30, 60, 0.7);
+    z-index: 1;
+  }
+  
+  .repair-depot-section h2 {
+    color: white;
+    font-size: 2rem;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 40px;
+  }
+  
+  .feature-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    z-index: 2;
+    flex-wrap: wrap;
+  }
+  
+  .feature-box {
+    background-color: #2573be;
+    border-radius: 10px;
+    padding: 30px 20px;
+    width: 200px;
+    text-align: center;
+    color: white;
+    transition: transform 0.3s ease;
+  }
+  
+  .feature-box:hover {
+    transform: translateY(-5px);
+  }
+  
+  .feature-icon {
+    background-color: rgba(255, 255, 255, 0.1);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 15px;
+  }
+  
+  .feature-icon img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .feature-box h3 {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 992px) {
+    .service-categories {
+      gap: 15px;
+    }
+    
+    .service-category {
+      width: 180px;
+    }
+    
+    .feature-box {
+      width: 180px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .hero-content h1 {
+      font-size: 2rem;
+    }
+    
+    .service-categories {
+      justify-content: space-around;
+    }
+    
+    .service-category {
+      width: 45%;
+      max-width: 200px;
+      margin-bottom: 20px;
+    }
+    
+    .feature-boxes {
+      gap: 15px;
+    }
+    
+    .feature-box {
+      width: 45%;
+      max-width: 180px;
+      padding: 20px 15px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .hero-content h1 {
+      font-size: 1.6rem;
+    }
+    
+    .service-category {
+      width: 100%;
+      max-width: 250px;
+    }
+    
+    .feature-box {
+      width: 100%;
+      max-width: 250px;
+      margin-bottom: 15px;
+    }
+  }

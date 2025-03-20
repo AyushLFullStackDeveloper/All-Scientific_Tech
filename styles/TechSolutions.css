@@ -1,0 +1,115 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #e0f7fa, #b3e5fc);
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+/* Main Container */
+.bgt-container-852 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    max-width: 1000px;
+    background: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    text-align: center;
+    margin: 100px auto 0;
+}
+
+.bgt-content-852 {
+    width: 100%;
+    max-width: 600px;
+}
+
+/* Headings */
+.bgt-title-852 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #222;
+    margin-bottom: 15px;
+}
+
+/* Links */
+.bgt-link-852, .bgt-link-753, .bgt-link-159, .bgt-link-357, .bgt-link-951 {
+    color: #0073e6;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.bgt-link-852:hover, .bgt-link-753:hover, .bgt-link-159:hover, .bgt-link-357:hover, .bgt-link-951:hover {
+    text-decoration: underline;
+    color: #005bb5;
+}
+
+/* Solution Items */
+.bgt-list-852 {
+    list-style: none;
+    padding: 0;
+}
+
+.bgt-item-852, .bgt-item-753, .bgt-item-159, .bgt-item-357, .bgt-item-951 {
+    font-size: 16px;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Images */
+.bgt-img-852 {
+    border-radius: 15px;
+    width: 200px;
+    max-width: 100%;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .bgt-container-852 {
+        flex-direction: row;
+        text-align: left;
+        padding: 40px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bgt-content-852 {
+        margin-left: 30px;
+        text-align: left;
+    }
+}
+
+@media (max-width: 767px) {
+    .bgt-container-852 {
+        flex-direction: column;
+        padding: 25px;
+        text-align: center;
+        align-items: center;
+        width: 90%;
+        max-width: 500px;
+    }
+
+    .bgt-content-852 {
+        margin-left: 0;
+        text-align: center;
+        width: 100%;
+    }
+}

@@ -1,0 +1,72 @@
+/* General Styles */
+.container {
+    background-color: #f3f4f6;
+    min-height: 100vh;
+    padding-bottom: 40px;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    background: url('https://via.placeholder.com/1500') no-repeat center center/cover;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  /* Content Section */
+  .content-section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .content-section ul {
+    padding-left: 20px;
+  }
+  
+  /* Technology List */
+  .technology-list {
+    text-align: center;
+    background: white;
+    padding: 30px;
+    margin: 40px auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .technology-list ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .technology-list li {
+    color: #1e40af;
+    margin: 5px 0;
+  }
+  
+  /* UtilizeCore Details */
+  .utilizecore-details {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .utilizecore-details img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    border-radius: 8px;
+  }
+  

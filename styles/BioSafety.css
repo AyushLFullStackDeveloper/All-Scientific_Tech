@@ -1,0 +1,354 @@
+/* Enhanced BioSafety Styles */
+
+/* Global Styles */
+:root {
+  --primary-color: #00203f;
+  --accent-color: #0008ff;
+  --gradient-primary: linear-gradient(90deg, #1e00ff, #5833ff);
+  --text-dark: #333333;
+  --text-light: #ffffff;
+  --shadow-light: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --shadow-medium: 0 8px 20px rgba(0, 0, 0, 0.15);
+  --shadow-dark: 0 15px 30px rgba(0, 0, 0, 0.2);
+  --transition-standard: all 0.3s ease;
+}
+
+.biosafety-page {
+  color: var(--text-dark);
+  overflow-x: hidden;
+}
+/* Hero Section */
+.biosafety-hero  {
+  height: 300px;
+  background: linear-gradient(rgba(0, 31, 63, 0.429), rgba(0, 32, 63, 0.7)) !important;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  position: relative; /* Ensures it stays within bounds */
+  padding: 0; /* Remove extra space */
+}
+
+/* Make sure title doesn’t break */
+.biosafety-hero .hero-title {
+  font-size: 3rem; /* Adjust if needed */
+  font-weight: 700;
+  color: var(--text-light);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin: 0; /* Remove unexpected spacing */
+  padding: 0.5rem 1rem; /* Add controlled padding */
+  padding-top: 5rem;
+  width: 100%;
+  max-width: 800px; /* Ensure it doesn’t stretch */
+}
+
+/* Fix flex container issues */
+.hero-content {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Main Container */
+.biosafety-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: white;
+}
+
+/* Page Title Styling */
+.page-title {
+  text-align: center;
+  margin-bottom: 4rem;
+  padding-top: 2rem;
+}
+
+.page-title h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  position: relative;
+  display: inline-block;
+  margin-bottom: 1rem;
+}
+
+.page-title h1:after {
+  content: '';
+  display: block;
+  width: 100px;
+  height: 4px;
+  background: var(--gradient-primary);
+  margin: 15px auto 0;
+  border-radius: 2px;
+}
+
+.title-description {
+  font-size: 1.2rem;
+  color: #666;
+  max-width: 700px;
+  margin: 1rem auto 0;
+}
+
+/* Services Grid Layout */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 2.5rem;
+}
+
+/* Service Item Styling */
+.service-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: var(--shadow-light);
+  transition: var(--transition-standard);
+}
+
+.service-item:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-dark);
+}
+
+/* Image Container */
+.image-container {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.service-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s ease;
+}
+
+.service-item:hover .service-image {
+  transform: scale(1.08);
+}
+
+/* Overlay Styling */
+.service-overlay {
+  position: absolute;
+  bottom: 0;
+  padding: 20px 30px;
+  min-width: 250px;
+  transition: var(--transition-standard);
+  z-index: 1;
+}
+
+.left-aligned {
+  left: 0;
+  background: linear-gradient(to right, rgba(0, 32, 63, 0.95), rgba(0, 32, 63, 0));
+  border-top-right-radius: 12px;
+  transform: translateX(-5px);
+}
+
+.right-aligned {
+  right: 0;
+  background: linear-gradient(to left, rgba(0, 32, 63, 0.95), rgba(0, 32, 63, 0));
+  border-top-left-radius: 12px;
+  transform: translateX(5px);
+}
+
+.service-item:hover .service-overlay {
+  transform: translateX(0);
+}
+
+.service-title {
+  color: var(--text-light);
+  font-size: 1.5rem;
+  margin: 0;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.service-title:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background-color: var(--accent-color);
+  transition: width 0.3s ease;
+}
+
+.service-item:hover .service-title:after {
+  width: 80px;
+}
+
+/* Hover Info Box */
+.service-hover-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 32, 63, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.service-item:hover .service-hover-info {
+  opacity: 1;
+}
+
+.info-content {
+  text-align: center;
+  padding: 2rem;
+  color: var(--text-light);
+  transform: translateY(20px);
+  transition: transform 0.4s ease;
+}
+
+.service-item:hover .info-content {
+  transform: translateY(0);
+}
+
+.info-content h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: var(--text-light);
+}
+
+.info-content p {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.learn-more-btn {
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: var(--transition-standard);
+  box-shadow: 0 3px 8px rgba(255, 126, 0, 0.3);
+}
+
+.learn-more-btn:hover {
+  background-color: #ff9933;
+  transform: translateY(-3px);
+  box-shadow: 0 5px 12px rgba(255, 126, 0, 0.4);
+}
+
+/* CTA Section */
+.cta-section {
+  margin-top: 5rem;
+  padding: 3rem;
+  background: linear-gradient(135deg, #f5f7fa, #e4e8f0);
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: var(--shadow-light);
+}
+
+.cta-section h2 {
+  font-size: 2rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.cta-section p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 2rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta-button-bio {
+  padding: clamp(0.8rem, 2vw, 1rem) clamp(1.5rem, 3vw, 2.5rem);
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  background-color:#0040ff;
+  border: none;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  margin-top: 1rem;
+  color: white;
+}
+
+.cta-button-bio:hover {
+  transform: translateY(-2px);
+  background-color: #76adff;
+}
+
+/* Responsive Layout */
+@media (min-width: 768px) {
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .hero-title {
+    font-size: 4rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.8rem;
+  }
+  
+  .page-title h1 {
+    font-size: 2.8rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .biosafety-hero {
+    height: 300px;
+  }
+  
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+  
+  .page-title h1 {
+    font-size: 2rem;
+  }
+  
+  .image-container {
+    height: 350px;
+  }
+  
+  .cta-section {
+    padding: 2rem 1.5rem;
+  }
+  
+  .cta-section h2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .biosafety-container {
+    padding: 3rem;
+  }
+  
+  .service-item {
+    transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+}

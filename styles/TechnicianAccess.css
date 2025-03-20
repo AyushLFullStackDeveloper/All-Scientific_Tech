@@ -1,0 +1,178 @@
+/* General Container */
+.zxc-container-963 {
+  max-width: 1200px;
+  margin: auto;
+  padding: 50px 30px;
+  font-family: 'Poppins', sans-serif;
+  color: #002b5c;
+  text-align: center;
+}
+
+/* Header Section */
+.zxc-header-963 {
+  margin-bottom: 30px;
+}
+
+.zxc-logo-963 {
+  width: 110px;
+  height: auto;
+  margin-bottom: 8px;
+}
+
+.zxc-tagline-963 {
+  font-size: 1.1rem;
+  color: #00509d;
+  font-weight: 500;
+}
+
+/* Title Section */
+.zxc-title-963,
+.zxc-subtitle-963 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #00509d;
+  margin-bottom: 18px;
+}
+
+/* Content Section */
+.zxc-content-963 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.zxc-image-963 {
+  width: 280px;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0, 43, 92, 0.1);
+}
+
+.zxc-certification-963 {
+  max-width: 380px;
+  text-align: left;
+}
+
+.zxc-certified-963 {
+  width: 90px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.zxc-paragraph-963 {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #003366;
+}
+
+.zxc-link-963 {
+  color: #00509d;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.zxc-link-963:hover {
+  text-decoration: underline;
+}
+
+/* Access Section */
+.zxc-access-section-963 {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin: 25px 0;
+}
+
+.zxc-category-963 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 8px 18px;
+  border: 2px solid #00509d;
+  border-radius: 6px;
+  color: #00509d;
+}
+
+.zxc-category-963:hover {
+  background: #00509d;
+  color: #fff;
+}
+
+/* Access Grid */
+.zxc-access-grid-963 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 18px;
+  margin-top: 25px;
+}
+
+.zxc-access-item-963,
+.zxc-access-item-852,
+.zxc-access-item-753,
+.zxc-access-item-159,
+.zxc-access-item-357 {
+  background: #f9f9f9;
+  padding: 18px;
+  border-radius: 6px;
+  border: 1px solid #00509d;
+  box-shadow: 0 1px 3px rgba(0, 43, 92, 0.08);
+  text-align: center;
+}
+
+.zxc-icon-963,
+.zxc-icon-852,
+.zxc-icon-753,
+.zxc-icon-159,
+.zxc-icon-357 {
+  width: 70px;
+  height: auto;
+  margin-bottom: 12px;
+}
+
+.zxc-access-title-963,
+.zxc-access-title-852,
+.zxc-access-title-753,
+.zxc-access-title-159,
+.zxc-access-title-357 {
+  font-size: 1.3rem;
+  color: #003366;
+  font-weight: 600;
+}
+
+.zxc-paragraph-852,
+.zxc-paragraph-753,
+.zxc-paragraph-159,
+.zxc-paragraph-357,
+.zxc-paragraph-951 {
+  font-size: 0.95rem;
+  color: #003366;
+  line-height: 1.4;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .zxc-container-963 {
+    padding: 40px 20px;
+  }
+
+  .zxc-title-963,
+  .zxc-subtitle-963 {
+    font-size: 1.6rem;
+  }
+
+  .zxc-content-963 {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .zxc-image-963 {
+    width: 240px;
+  }
+
+  .zxc-access-grid-963 {
+    grid-template-columns: 1fr;
+  }
+}
